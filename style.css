@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Homme ;
+    src: url(fonts/Homme.ttf);
+}
+@font-face {
+    font-family: Good ;
+    src: url(fonts/Good\ Brush.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Efeito scroll-bar */
+section {
+    height: 100vh;
+    color: white;
+    scroll-snap-align: start;
+}
+
+.container-principal {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
+}
+.one {
+    background: url(imagens/background.jpg) no-repeat;
+    background-size: 100vh;
+    background-size: 100%;
+    object-fit: cover;
+
+}
+
+h3 a{
+    font-family: Good;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(244,128,0,1) 27%, rgba(40,40,59,1) 75%, rgba(22,26,29,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+h3 a:hover {
+    background-size: 210%;
+}
+
+.nav-top {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+li{
+    margin-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+li a:hover {
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.49);
+    border-radius: 0px 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    color: rgba(244,128,0,1);
+}
+
+.container-perfil {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    align-items: center;
+    font-family: Good;
+    transform: rotate(0deg) skew(30deg);
+    animation: Foco 7s ease-in-out infinite;
+    width: 80%;
+    margin-left: 100px;
+    color: rgb(202, 79, 7);
+}
+
+.blur {
+    color: white;
+    animation: Foco 14s ease-in-out infinite;
+}
+
+@keyframes Foco {
+        0%, 100% {
+            transform: rotate(0deg) skew(30deg) translate(0, 0);
+            text-shadow: -10px 10px rgba(0, 0, 0, .2);
+        }
+        50%{
+            transform: rotate(0deg) skew(30deg) translate(30px, -30px);
+            text-shadow: -30px 30px rgba(0, 0, 0, .2);
+            filter: blur(15px);
+        }
+}
+
+.two {
+    background-color: blue;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    width: 100%;
+}
+
+.content-sobre {
+    border-radius: 50px 0px 50px 50px;
+    border: 2px solid  rgb(202, 79, 7) ;
+    box-shadow: -1em 0 0.4em black;
+    color: black;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+}
+
+.content-sobre h1 {
+   font-size: 30px;
+   font-family: Good;
+   margin-bottom: 30px;
+}
+
+#Nome {
+    color:rgb(202, 79, 7);
+}
+
+.content-sobre-foto {
+    border-radius: 70px 0px;
+    height: 400px;
+    width: 300px;
+}
+
+.content-sobre-foto img {
+    border-radius: 30px 0px;
+    box-shadow: 10px 5px 5px black;
+    height: 400px;
+    width: 300px;
+}
+
+
+.three {
+    background-color: violet;
+}
+
