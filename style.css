@@ -122,8 +122,7 @@ li a:hover {
 }
 
 .two {
-    background: url(imagens/background2.jpg) no-repeat;
-    background-size: 100%;
+    background: linear-gradient(90deg, rgba(244,128,0,1) 27%, rgba(40,40,59,1) 75%, rgba(22,26,29,1) 100%);
 }
 
 .container-sobre {
@@ -197,6 +196,7 @@ li a:hover {
 .social-midia li a:hover {
     background: none;
     border: none;
+    color:  rgba(22,26,29,1);
 }
 
 .redes-sociais img{
