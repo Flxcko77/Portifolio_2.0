@@ -231,7 +231,8 @@ li a:hover {
 }
 
 .Cards {
-    background: blueviolet;
+    background: rgba(54, 54, 54, 0.4) ;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 250px;
     height: 400px;
     margin: 0px 20px;
@@ -244,20 +245,54 @@ li a:hover {
     text-align: center;
 }
 
+.Cards h2 {
+    font-family: Good;
+    color:rgba(40,40,59,1);
+
+}
+
+.Cards p{
+    padding: 5px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
 .tecnologia img {
     width: 150px;
     height: 150px;
     margin-bottom: 40px;
 }
 
+#html img {
+    margin-bottom: 20px;
+}
+
 .barra-de-habilidade {
-    width: 80%;
+    width: 90%;
     height: 5px;
     background: green;
+    border-radius: 50px;
 }
 
 .Cards:hover {
     transform: scale(1.3);
     border-radius: 0px 20px;
+}
+
+#html:hover{
+    background: #DD4B25;   
+}
+
+#css:hover {
+    background: #1B84C1;
+}
+
+#javascript:hover {
+    background: #EFD81D;
+}
+
+#react:hover {
+    background: #5ED3F3;
 }
 
