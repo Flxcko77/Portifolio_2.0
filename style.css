@@ -296,3 +296,63 @@ li a:hover {
     background: #5ED3F3;
 }
 
+.four {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-four {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet;
+    height: 100vh;
+    width: 95%;
+}
+
+.content-four {
+    margin-left: 5px;
+    height: 60vh;
+    width: 400px;
+    background: red;
+    margin-right: 200px;
+    border-radius: 0px 50px;
+
+}
+
+.content-four img {
+    height: 60vh;
+    width: 400px;
+    border-radius: 0px 50px;
+    object-fit: cover;
+}
+
+.content-form {
+    background: rgb(255, 0, 128);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 400px;
+    border: solid 2px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-form{
+    margin-top: 10px;
+}
+
+.dados-cliente {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
