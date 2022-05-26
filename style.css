@@ -296,8 +296,10 @@ li a:hover {
     background: #5ED3F3;
 }
 
+/* ---------> 4ª section <--------- */
+
 .four {
-    background: black;
+    background: linear-gradient(90deg, rgba(244,128,0,1) 27%, rgba(40,40,59,1) 75%, rgba(22,26,29,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,23 +310,23 @@ li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: blueviolet;
-    height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 95vh;
     width: 95%;
 }
 
 .content-four {
     margin-left: 5px;
-    height: 60vh;
+    height: 80vh;
     width: 400px;
-    background: red;
     margin-right: 200px;
     border-radius: 0px 50px;
 
 }
 
 .content-four img {
-    height: 60vh;
+    height: 80vh;
     width: 400px;
     border-radius: 0px 50px;
     object-fit: cover;
@@ -332,11 +334,12 @@ li a:hover {
 /* ----------> Estilização do formulario <------------ */
 
 .content-form {
-    background: rgb(255, 0, 128);
+    background: rgba(54, 54, 54, 0.4);
     display: flex;
     flex-direction: column;
     height: 90vh;
     width: 400px;
+    border-radius: 10px;
     border: solid 2px black;
 }
 
@@ -348,25 +351,47 @@ form {
 
 .titulo-form{
     margin-top: 10px;
+    margin-bottom: 0px;
     padding: 5px;
+    font-family: Good;
+    color: whitesmoke;
 }
 
 .dados-cliente {
-    margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.dados-pessoais {
+    margin-top: 10px;
+    text-align: center;
+    background: none;
+    border: 2px solid rgba(244,128,0,1);
+    border-radius: 24px;
+    padding: 10px 10px;
+    color: white;
+    transition: 1s;
+}
+
+.dados-pessoais:focus {
+    width: 250px;
+    background: rgba(22,26,29,1) ;
 }
 
 .expectativa {
     display: flex;
     flex-direction: column;
-    
     width: 100%;
     height: 100%;
     align-items: center;
     margin-top: 5px;
+}
+
+.expectativa h3 {
+    font-family: Good;
+    color: whitesmoke;
 }
 
 .Trabalho {
@@ -381,7 +406,17 @@ form {
 }
 
 textarea {
-    width: 314px;
-    height: 174px;
+    height: 135px;
+    width: 282px;
     border-radius: 10px;
+    background: none;
+    color: white;
+    text-align: center;
+    border: 2px solid rgba(244,128,0,1);
+    transition: 1s;
+}
+
+textarea:focus {
+
+    background: rgba(22,26,29,1) ;
 }
