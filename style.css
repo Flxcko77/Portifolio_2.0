@@ -417,6 +417,23 @@ textarea {
 }
 
 textarea:focus {
-
     background: rgba(22,26,29,1) ;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+select {
+    background: none;
+    border: 2px solid rgba(244,128,0,1);
+    border-radius: 24px;
+    color: whitesmoke;
+}
+
+option:focus {
+    background: none;
+    border: 2px solid rgba(244,128,0,1);
+    border-radius: 24px;
+    color: whitesmoke;
 }
